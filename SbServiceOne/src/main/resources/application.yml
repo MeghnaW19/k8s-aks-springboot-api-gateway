@@ -1,0 +1,8 @@
+# application name should be "sbservice-one"
+server:
+   port: 8081
+spring:
+  application:
+    name: sbservice-one
+app:
+  message: Hello !!! Message from SpringBoot Service One !!!

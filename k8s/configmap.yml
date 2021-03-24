@@ -1,0 +1,5 @@
+#Create ConfigMap, which has to be accessed by ApiGatewayService while deploying
+#Specify the Zuul routes i.e path and url of SbServiceOne,SbServiceTwo as keys and values
+#For path use the values as sbserviceone for SbServiceOne, sbservicetwo for SbServiceTwo.
+#For url values will be external ip of the respective services
+apiVersion: v1

@@ -1,0 +1,10 @@
+#Create a Deployment by using the SbServiceTwo image pushed to Docker Hub
+#Use containerPort 8082
+
+apiVersion: apps/v1
+
+---
+#Create the Service of type LoadBalancer and use the above created Deployment as selector
+#Use port 8082
+
+apiVersion: v1

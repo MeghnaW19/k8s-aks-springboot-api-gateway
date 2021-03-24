@@ -1,0 +1,14 @@
+server:
+   port: 8090
+spring:
+  application:
+    name: api-gateway
+
+zuul:
+  routes:
+    service_1:
+      path: ${} #assign value to path defined in deployment with key SERVICEONE_PATH
+      url:  ${} #assign value to url defined in deployment with key SERVICEONE_URL
+    service_2:
+      path: ${} #assign value to path defined in deployment with key SERVICETWO_PATH
+      url:  ${} #assign value to url defined in deployment with key SERVICETWO_URL
